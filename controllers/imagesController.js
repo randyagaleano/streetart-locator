@@ -8,13 +8,18 @@ var Images = require("../models/images.js");
 
 router.get('/', function(req, res) {
 	res.render('index.hbs', {
+		// image is what we use to refer to the photos
 		image: Images
 	})
 });
 
+router.get('/:id', function (req, res) {
+	var individualPicture = Image[req.params.id];
 
-router.get('/new', function (req, res) {
-	res.render('new');
+	res.render('show', {
+		name: image.name,
+		img: image.img,
+	});
 });
 
 module.exports = router;
