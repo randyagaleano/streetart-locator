@@ -1,2 +1,19 @@
-<h1>{{title}}</h1>
+<h1 class="header">{{title}}</h1>
+<h1 class="header">There are {{image.length}} pokemon listed</h1>
 <p>Welcome to {{title}}</p>
+<p>This is where you'll see some images</p>
+
+<ul id="list">
+	
+	<!-- image displayed are pokemon -->
+	{{#each image}}
+	<li>
+		<!-- this link takes you to the view -->
+		<a href="/pokemon/{{@index}}">
+			<img src="{{img}}" alt="" width="200px">
+		</a>
+	</li>
+	{{/each}}
+
+</ul>
+
