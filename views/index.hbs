@@ -7,12 +7,12 @@
 	
 	<!-- image displayed are pokemon -->
 	{{#each image}}
-	<li>
+	<div class="image-container">
 		<!-- this link takes you to the view -->
 		<a href="/streetart/{{@index}}">
 			<img src="{{img}}" alt="" width="200px">
 		</a>
-	</li>
+	</div>
 	{{/each}}
 
 </ul>
