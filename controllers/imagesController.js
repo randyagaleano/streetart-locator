@@ -13,12 +13,26 @@ router.get('/', function(req, res) {
 	})
 });
 
-router.get('/:id', function (req, res) {
-	var image = photos[req.params.id];
-	console.log(photos[req.params.id]);
-	res.render('show', {
+
+router.get('/new', function(req, res) {
+	res.render('photos/new');
+});
+
+router.post('/', function(req, res) {
+	photos.push({
 		name: image.name,
 		img: image.img,
+		id: image.id,
+	});
+	res.redirect('/streetart')
+});
+
+router.get('/:id', function (req, res) {
+	var image = photos[req.params.id];
+	res.render('photos/show', {
+		name: image.name,
+		img: image.img,
+		id: image.id,
 	});
 });
 

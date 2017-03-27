@@ -1,19 +1,26 @@
-<h1 class="header">{{title}}</h1>
-<h1 class="header">There are {{image.length}} pokemon listed</h1>
-<p>Welcome to {{title}}</p>
-<p>This is where you'll see some images</p>
+<div class="header">
+	<h1>THIS IS THE TITLE. {{image.length}} IMAGES</h1>
+	<div class="navbar">
+		<span><a href="/streetart">HOME</a></span>
+		<span><a href="/streetart/new">UPLOAD</a></span>
+	</div>
+</div>
 
-<ul id="list">
+
+<h2 class="subHeader">ENJOY</h2>
+<p>USER UPLOADS GO HERE</p>
+
+<div class="list">
 	
 	<!-- image displayed are pokemon -->
 	{{#each image}}
 	<div class="image-container">
 		<!-- this link takes you to the view -->
-		<a href="/streetart/{{@index}}">
-			<img src="{{img}}" alt="" width="200px">
-		</a>
+		<div class="image-item">
+			<a href="/streetart/{{@index}}"><img src="{{img}}" alt="" width="200px"></a>
+		</div>
 	</div>
 	{{/each}}
 
-</ul>
+</div>
 
