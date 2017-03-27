@@ -6,25 +6,26 @@
 	</div>
 </div>
 
+<div class="uploadform">
+	<form action="/streetart" method="post" id="addForm">
+		<div class="form-group">
+			<label for="image-url">URL: </label>
+			<input id="image-url" class="form-control" type="text" name="URL" value="" required>
+		</div>
 
-<form action="/streetart" method="post" id="addForm">
-	<div class="form-group">
-		<label for="image-url">URL: </label>
-		<input id="image-url" class="form-control" type="text" name="URL" value="" required>
-	</div>
 
+		<div class="form-group">
+			<label for="image-title">TITLE: </label>
+			<input id="image-title" class="form-control" type="text" name="title" value="" required>
+		</div>
 
-	<div class="form-group">
-		<label for="image-title">TITLE: </label>
-		<input id="image-title" class="form-control" type="text" name="title" value="" required>
-	</div>
+		<div class="form-group">
+			<label for="image-description">DESCRIPTION: </label>
+			<input id="image-description" class="form-control" type="text" name="description" value="" required>
+		</div>
 
-	<div class="form-group">
-		<label for="image-description">DESCRIPTION: </label>
-		<input id="image-description" class="form-control" type="text" name="description" value="" required>
-	</div>
-
-	<button class="button" type="submit" name="button">
-	<p>Add it!</p>
-	</button>
-</form>
+		<button class="button" type="submit" name="button">
+		<p>Add it!</p>
+		</button>
+	</form>
+</div>
