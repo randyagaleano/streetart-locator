@@ -7,26 +7,23 @@ var User = require('../models/user');
 // var List = require('../models/list.js');X
 // var authHelpers = require('../helpers/auth.js');
 
-router.get('/signup', function(req, res){
+router.get('/signup', function newUser(req, res){
   res.render('users/signup.hbs');
 });
 
-router.post('/', function(req, res) {
+router.post('/', function createUser(req, res) {
 	var user = new User({
 		username: req.body.username,
 		password: req.body.password
 	});
 		user.save(function(err, user){
-			if (err) console.log(err);
+			if (err) { return console.log(err); }
 			console.log(user);
 			// console.log(req.session.currentUser);
-		res.redirect('users/login.hbs');
+		res.redirect('users/login');
   });
  	console.log('sup');
 });
-
-
-
 
 
 router.get('/login', function(req, res){
