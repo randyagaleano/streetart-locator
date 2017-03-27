@@ -15,12 +15,18 @@ a {
 }
 
 .header {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
 	height: 100px;
 	background-color:  rgba(0, 0, 0, 0.9);
 	margin: 0px;
 	color: white;
 	padding: 0px 20px 20px 20px;
+}
 
+.header a {
+	text-decoration: none;	
 }
 
 .header p {
@@ -32,7 +38,7 @@ a {
 }
 
 .navbar {
-	padding-top: 20px;
+
 }
 
 .wrapper {
