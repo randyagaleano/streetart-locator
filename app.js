@@ -3,12 +3,21 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
+var db = mongoose.connection;
+mongoose.connect('mongodb://localhost/streetart');
+
+db.once('open', function() {
+ console.log('database connected');
+});
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
