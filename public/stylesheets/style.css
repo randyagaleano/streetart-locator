@@ -21,19 +21,19 @@ a {
 	height: 150px;
 	background-color:  rgba(0, 0, 0, 0.5);
 	margin: 0px;
-	color: white;
+	color: black;
 	padding: 0px 20px 20px 20px;
 	font-size: 1.25em;
 }
 
 .header a {
 	text-decoration: none;	
-	color: white;
-	transition: 2s;
+	color: black;
+	transition: 4s;
 }
 
 .header a:hover {
-	color: grey;
+	color: white;
 	transition: .25s;
 }
 

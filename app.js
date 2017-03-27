@@ -27,8 +27,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // CONTROLLERS
 //======================
 //for root directory, show all donuts
+
 var imagesController = require('./controllers/imagesController.js');
 app.use('/streetart', imagesController);
+
+var usersController = require('./controllers/users.js');
+app.use('/user', usersController);
 
 // app.use('/', index);
 // app.use('/users', users);

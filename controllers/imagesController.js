@@ -13,7 +13,6 @@ router.get('/', function(req, res) {
 	})
 });
 
-
 router.get('/new', function(req, res) {
 	res.render('photos/new');
 });
