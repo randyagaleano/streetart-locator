@@ -36,7 +36,7 @@ a {
 }
 
 .wrapper {
-	margin: 100px;
+	margin: 200px;
 	background-color:  rgba(255, 255, 255, 0.9);
 }
 
@@ -69,12 +69,12 @@ button {
 }
 
 .uploadform {
+	margin: 0px auto;
+	height: 500px;
+	width: 500px;
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	margin: 0px 50px 0px 50px;
-	/*margin: 0px auto;*/
-	width: 500px;
 }
 
 
