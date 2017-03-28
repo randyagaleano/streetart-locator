@@ -1,11 +1,11 @@
 <div class="header">
-	<h1>THIS IS THE TITLE. {{image.length}} IMAGES</h1>
+	<h1>{{images.title}}</h1>
 	<div class="navbar">
 		<span><a href="/streetart">HOME</a></span>
 		<span>//</span>
-		<span><a href="/user/signup">SIGN UP</a></span>
+		<span><a href="/users/signup">SIGN UP</a></span>
 		<span>//</span>
-		<span><a href="/user/login">LOGIN</a></span>
+		<span><a href="/users/login">LOGIN</a></span>
 		<span>//</span>
 		<span><a href="/streetart/new">UPLOAD</a></span>
 	</div>
@@ -15,6 +15,6 @@
 
 <div class="list">
 				<img src="{{images.imageUrl}}" alt="" width="200px">
-				<p>{{images.title}}</p>
+				
 				<p>{{images.description}}</p>
-</div>
+</div> 
