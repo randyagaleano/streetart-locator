@@ -14,6 +14,8 @@ var Image = require("../models/image.js");
 // 	})
 // });
 
+
+
 router.get('/', function(req, res){
   Image.find({})
     .exec(function(err, images){
@@ -25,6 +27,50 @@ router.get('/', function(req, res){
     });
 });
 
+router.get('/:id', function showAction(req, res){
+  Image.findById(req.params.id)
+    .exec(function(err, image) {
+      if (err) console.log(err);
+      console.log(image);
+      res.render('photos/show', {
+        image: image
+      });
+    });
+});
+
+router.get('/:id/edit', function editAction(req, res) {
+  Image.findById(req.params.id)
+    .exec(function(err, image) {
+      if (err) console.log(err);
+      console.log(image);
+      res.render('photos/edit', {
+        image: image
+      });
+    });
+});
+
+
+router.patch('/:id', function updateAction(req, res) {
+   Image.findByIdAndUpdate(req.params.id, {
+     title: req.body.title,
+     description: req.body.description }, 
+    {new: true})
+       .exec(function(err, image) {
+           if (err) { return console.log(err); }
+           console.log(image);
+
+           // Make this a redirect -- all non-GETs do redirects
+           res.redirect(`/streetart/${req.params.id}`);
+
+
+
+           // res.redirect('streetart/' + req.params.id)
+           // res.redirect('streetart/' + image._id)
+           // res.redirect(`streetart/${req.params.id}`)
+       });
+});
+
+
 // step 1.) Use mongoose call to grab all Images in images collection using image model hint: Image.find
 // step 2.) Iterate through every Image 
 
@@ -32,6 +78,7 @@ router.get('/', function(req, res){
 router.get('/new', function(req, res) {
 	res.render('photos/new');
 });
+
 
 
 router.post('/', function createUser(req, res) {
@@ -50,16 +97,7 @@ router.post('/', function createUser(req, res) {
 });
 
 
-router.get('/:id', function(req, res){
-  Image.findById(req.params.id)
-  .exec(function(err, images) {
-    if (err) console.log(err);
-    console.log(images);
-    res.render('photos/show', {
-      images: images
-    });
-  });
-});
+
 
 
 

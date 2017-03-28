@@ -1,5 +1,5 @@
 <div class="header">
-	<h1>{{images.title}}</h1>
+	<h1>{{image.title}}</h1>
 	<div class="navbar">
 		<span><a href="/streetart">HOME</a></span>
 		<span>//</span>
@@ -14,8 +14,10 @@
 
 
 <div class="list">
-			<a href="/streetart">
-				<img src="{{images.imageUrl}}" alt="" width="750px">
-				<p>{{images.description}}</p>
-			</a>
+	<a href="/streetart">
+		<img src="{{image.imageUrl}}" alt="" width="750px">
+		<p>{{image.description}}</p>
+	</a>
 </div> 
+
+<button><a href="/streetart/{{image.id}}/edit">EDIT</a></button>
