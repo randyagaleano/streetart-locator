@@ -14,7 +14,8 @@ router.get('/signup', function newUser(req, res){
 router.post('/', function createUser(req, res) {
 	var user = new User({
 		username: req.body.username,
-		password: req.body.password
+		password: req.body.password,
+		// password_digest: req.body.password
 	});
 		user.save(function(err, user){
 			if (err) { return console.log(err); }

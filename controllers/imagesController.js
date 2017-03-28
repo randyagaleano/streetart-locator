@@ -13,6 +13,8 @@ router.get('/', function(req, res) {
 	})
 });
 
+
+
 router.get('/new', function(req, res) {
 	res.render('photos/new');
 });
@@ -22,9 +24,14 @@ router.post('/', function(req, res) {
 		name: image.name,
 		img: image.img,
 		id: image.id,
+		// imageUrl: req.body.imageUrl,
+		// title: req.body.title,
+		// description: req.body.description
 	});
 	res.redirect('/streetart')
 });
+
+
 
 router.get('/:id', function (req, res) {
 	var image = photos[req.params.id];
@@ -32,6 +39,9 @@ router.get('/:id', function (req, res) {
 		name: image.name,
 		img: image.img,
 		id: image.id,
+		// imageUrl: req.body.imageUrl,
+		// title: req.body.title,
+		// description: req.body.description
 	});
 });
 

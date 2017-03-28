@@ -1,7 +1,7 @@
 module.exports = [{
     id: "001",
     name: "Bulbasaur",
-    img: "http://img.pokemondb.net/artwork/bulbasaur.jpg",
+    img: "http://az616578.vo.msecnd.net/files/2015/12/18/635860694367891015-143749672_f9DxYSd-2.jpg",
     type: [
       "Grass",
       "Poison"
