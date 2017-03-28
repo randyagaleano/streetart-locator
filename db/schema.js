@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 mongoose.promise = global.Promise;
+
 var ImageSchema = new Schema ({
 	imageUrl: String,
 	title: String,

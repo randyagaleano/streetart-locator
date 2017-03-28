@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/streetart');
 
 var User = require("../models/user");
-var Image = require("../models/imageModel")
+var Image = require("../models/image")
 
 mongoose.promise = global.Promise;
 

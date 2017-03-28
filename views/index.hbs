@@ -14,14 +14,18 @@
 <h2 class="subHeader">ENJOY</h2>
 <p>USER UPLOADS GO HERE</p>
 
+
 <div class="list">
 	
 	<!-- image displayed are pokemon -->
-	{{#each image}}
+	{{#each images}}
 	<div class="image-container">
 		<!-- this link takes you to the view -->
 		<div class="image-item">
-			<a href="/streetart/{{@index}}"><img src="{{img}}" alt="" width="200px"></a>
+			<a href="/streetart/{{this._id}}">
+				<img src="{{imageUrl}}" alt="" width="200px">
+				<p>{{title}}</p>
+			</a>
 		</div>
 	</div>
 	{{/each}}
