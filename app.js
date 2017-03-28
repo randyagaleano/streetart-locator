@@ -5,18 +5,19 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var session = require('express-session');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
 
-var db = mongoose.connection;
+// var db = mongoose.connection;
 mongoose.connect('mongodb://localhost/streetart');
 
-db.once('open', function() {
- console.log('database connected');
-});
+// db.once('open', function() {
+//  console.log('database connected');
+// });
 
 
 // view engine setup
@@ -41,7 +42,10 @@ var imagesController = require('./controllers/imagesController.js');
 app.use('/streetart', imagesController);
 
 var usersController = require('./controllers/users.js');
-app.use('/user', usersController);
+app.use('/users', usersController);
+
+var sessionsController = require('./controllers/sessions.js');
+app.use('/sessions', sessionsController);
 
 // app.use('/', index);
 // app.use('/users', users);

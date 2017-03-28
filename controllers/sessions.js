@@ -4,8 +4,10 @@ var User = require('../models/user.js');
 // var authHelpers = require('../helpers/auth.js');
 
 //LOGIN
-router.get('/login', function(req, res) {
-  res.render('users/login.hbs');
+router.post('/login', function(req, res) {
+	// User.findOne({ username: req.body.username })
+ //  res.redirect('/users/' + user.id + '/streetart')
+  res.redirect('/streetart');
 });
 
 

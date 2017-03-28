@@ -1,11 +1,11 @@
 <div class="header">
-	<h1>THIS IS THE TITLE. {{image.length}} IMAGES</h1>
+	<h1>THIS IS THE TITLE.</h1>
 	<div class="navbar">
 		<span><a href="/streetart">HOME</a></span>
 		<span>//</span>
-		<span><a href="/user/signup">SIGN UP</a></span>
+		<span><a href="/users/signup">SIGN UP</a></span>
 		<span>//</span>
-		<span><a href="/user/login">LOGIN</a></span>
+		<span><a href="/users/login">LOGIN</a></span>
 		<span>//</span>
 		<span><a href="/streetart/new">UPLOAD</a></span>
 	</div>
@@ -15,19 +15,19 @@
 <p>ENTER USERNAME AND PASSWORD</p>
 
 <div class="uploadform">
+
 	<form action="/sessions/login" method="post" id="addForm">
 		<div class="form-group">
 			<label for="username">USERNAME: </label>
 			<input type="text" name="username">
 		</div>
-
 		<div class="form-group">
 			<label for="password">PASSWORD: </label>
 			<input type="text" name="password">
 		</div>
-
-		<input type="submit" value="sign up">
+		<input type="submit" value="Login">
 	</form>
+
 </div>
 
 
