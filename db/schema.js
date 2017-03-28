@@ -6,6 +6,7 @@ var ImageSchema = new Schema ({
 	imageUrl: String,
 	title: String,
 	description: String
+	
 });
 
 var UserSchema = new Schema ({

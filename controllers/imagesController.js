@@ -21,9 +21,9 @@ router.get('/new', function(req, res) {
 
 router.post('/', function(req, res) {
 	photos.push({
-		name: image.name,
-		img: image.img,
-		id: image.id,
+		name: photos.name,
+		img: photos.img,
+		id: photos.id,
 		// imageUrl: req.body.imageUrl,
 		// title: req.body.title,
 		// description: req.body.description
@@ -31,6 +31,20 @@ router.post('/', function(req, res) {
 	res.redirect('/streetart')
 });
 
+// router.post('/', function createUser(req, res) {
+// 	var image = new Image({
+// 		imageUrl: req.body.imageUrl,
+// 		title: req.body.title,
+// 		description: req.body.description
+// 	});
+// 		user.save(function(err, user){
+// 			if (err) { return console.log(err); }
+// 			console.log(image.title);
+// 			// console.log(req.session.currentUser);
+// 		res.redirect('/streetart');
+//   });
+//  	console.log('sup');
+// });
 
 
 router.get('/:id', function (req, res) {
@@ -39,9 +53,9 @@ router.get('/:id', function (req, res) {
 		name: image.name,
 		img: image.img,
 		id: image.id,
-		// imageUrl: req.body.imageUrl,
-		// title: req.body.title,
-		// description: req.body.description
+		// name: photos.name,
+		// img: photos.img,
+		// id: photos.id,
 	});
 });
 
