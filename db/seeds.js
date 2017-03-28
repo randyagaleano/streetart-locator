@@ -10,19 +10,24 @@ User.remove({}, function(err) {
     console.log(err);
 });
 
+var photo1 = new Image ({
+  imageUrl: 'http://az616578.vo.msecnd.net/files/2015/12/18/635860694367891015-143749672_f9DxYSd-2.jpg',
+  title: 'this is an art piece',
+  description: 'description goes here'
+});
+
 var girlFriend = new User({
   username: 'Allison',
   password: 'Gilmore',
 });
+
 var mom = new User({
 	username: 'Vonda',
 	last_name: 'King',
 });
 
-var photo1 = new Image ({
-	imagUrl: 'http://az616578.vo.msecnd.net/files/2015/12/18/635860694367891015-143749672_f9DxYSd-2.jpg',
-	title: 'this is a banksy art piece'
-});
+
+
 
 girlFriend.save(function(err){
   if(err) console.log(err);
