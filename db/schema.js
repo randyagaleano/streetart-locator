@@ -12,7 +12,8 @@ var ImageSchema = new Schema ({
 
 var UserSchema = new Schema ({
 	username: String,
-	password: String
+	password: String,
+	image: [ImageSchema]
 });
 
 UserSchema.pre('save', function(next) {

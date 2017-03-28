@@ -13,6 +13,7 @@ function loginUser(req, res, next) {
 
   User.findOne({ username: username })
     .then(function processUser(foundUser) {
+     
       if (!foundUser) {
         res.json({status: 404, data: 'no user found'})
       }

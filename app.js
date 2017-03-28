@@ -38,6 +38,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 //======================
 //for root directory, show all donuts
 
+var indexController = require('./controllers/index.js');
+app.use('/', indexController);
+
 var imagesController = require('./controllers/imagesController.js');
 app.use('/streetart', imagesController);
 
