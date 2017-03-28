@@ -23,9 +23,14 @@
 	<img src="{{image.imageUrl}}" alt="" width="750px">
 </div>
 
+
+<ul>
+	<form class="" action="/streetart/{{image.id}}?_method=delete" method="post">
+		<input type="submit" name="" value="delete">
+	</form>
+</ul>
+
 <div class="uploadform" id="updateForm">
-
-
   <form class="" action="/streetart/{{image.id}}?_method=PATCH" method="POST">
 		<div class="form-group">
 			<label for="image-title">TITLE: </label>
@@ -40,6 +45,7 @@
 		<button class="button" type="submit" name="button">
 		<p>EDIT</p>
 		</button>
+
 	</form>
 </div>
 

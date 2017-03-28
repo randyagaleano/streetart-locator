@@ -61,18 +61,24 @@ router.patch('/:id', function updateAction(req, res) {
 
            // Make this a redirect -- all non-GETs do redirects
            res.redirect(`/streetart/${req.params.id}`);
-
-
-
+            // all of these work the same way
            // res.redirect('streetart/' + req.params.id)
            // res.redirect('streetart/' + image._id)
            // res.redirect(`streetart/${req.params.id}`)
        });
 });
 
+// DELTE ROUTE
+router.delete('/:id', function(req, res){
+  Image.findByIdAndRemove(req.params.id)
+  .exec(function(err, image) {
+    if (err) console.log(err);
+    console.log('Image deleted!');
+    // res.send("Image deleted");
+    res.redirect('/streetart');
+  });
+});
 
-// step 1.) Use mongoose call to grab all Images in images collection using image model hint: Image.find
-// step 2.) Iterate through every Image 
 
 
 router.get('/new', function(req, res) {
