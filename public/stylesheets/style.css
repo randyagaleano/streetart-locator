@@ -174,11 +174,28 @@ button {
 
 .editButtons {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-	margin: 10px;
+	transition: 2s;
 }
 
+.editButtons .button:hover {
+	color: white;
+	background-color: black;
+	transition: 1s;
+}
+
+.editButtons .button {
+	color: black;
+	background-color: white;
+	transition: 1s;
+	margin: 20px 0px 20px 0px;
+}
+
+.deleteButton .value {
+	color: red;
+}
 
 
 
