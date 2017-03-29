@@ -14,7 +14,7 @@ Users will also be able to favorite, comment, and search images of their liking.
 
 DEPLOYED APP THROUGH HEROKU 
 -----------------
-https://streetartlocator.herokuapp.com/
+https://radiant-sierra-29514.herokuapp.com/
 
 
 
