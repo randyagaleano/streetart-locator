@@ -75,10 +75,6 @@ li {
 	font-size: 1.25em;
 }
 
-.list a:hover {
-	
-}
-
 .editList img {
 	margin: 100px 0px 100px 0px;
 }
@@ -169,6 +165,10 @@ button {
 	color: black;
 	font-size: 1.05em;
 	transition: .25s;
+}
+
+.showImage {
+	margin-bottom: 50px;
 }
 
 
