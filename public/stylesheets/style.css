@@ -197,5 +197,13 @@ button {
 	color: red;
 }
 
+#socialMedia {
+	display: flex;
+	float: right;
+	height: 100px;
+}
+
+
+
 
 
