@@ -3,11 +3,9 @@
 	<div class="navbar">
 		<span><a href="/streetart">HOME</a></span>
 		<span>//</span>
-		<span><a href="/users/signup">SIGN UP</a></span>
-		<span>//</span>
-		<span><a href="/users/login">LOGIN</a></span>
-		<span>//</span>
 		<span><a href="/streetart/new">UPLOAD</a></span>
+		<span>//</span>
+		<span><a href="/users/login">LOG OUT</a></span>
 	</div>
 </div>
 
@@ -18,6 +16,6 @@
 		<img src="{{image.imageUrl}}" alt="" width="750px">
 		<p>{{image.description}}</p>
 	</a>
+	<button><a href="/streetart/{{image.id}}/edit">EDIT</a></button>
 </div> 
 
-<button><a href="/streetart/{{image.id}}/edit">EDIT</a></button>
