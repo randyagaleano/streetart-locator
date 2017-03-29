@@ -23,20 +23,20 @@ http://jeopardy-rg.bitballoon.com/
 
 Wireframe
 -----------------
-http://imgur.com/a/6nMmA
+![alt tag](http://imgur.com/a/6nMmA)http://imgur.com/a/6nMmA
 
 
 
 TRELLO
 -----------------
-https://trello.com/b/WZ9OEPhW/jeopardy
+https://trello.com/b/XlMKRZw1/street-art-locator
 
 
 
 TECHNOLOGIES USED
 -----------------
-I attached jquery in order to convert over from my javascript(in progress).
-HTML, CSS, JS.
+HTML, CSS, JS
+Node.js, Express, MongoDB
 
 
 
