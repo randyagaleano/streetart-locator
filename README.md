@@ -42,5 +42,10 @@ HTML, CSS, JS.
 
 FUTURE DEVELOPEMENT
 -----------------
-Create locations for each image so users can know where to find them 
+Create locations for each image so users can know where to find them. Google maps API
 <br>
+Create user functionality to comment and favorite images
+<br>
+Allow users to add tags
+<br>
+Allow users to search by tags, name, etc.
