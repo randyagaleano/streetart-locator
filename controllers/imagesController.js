@@ -27,6 +27,28 @@ router.get('/', function(req, res){
     });
 });
 
+router.get('/new', function(req, res) {
+  res.render('photos/new');
+});
+
+
+
+router.post('/', function createUser(req, res) {
+  var image = new Image({
+    imageUrl: req.body.imageUrl,
+    title: req.body.title,
+    description: req.body.description
+  });
+    image.save(function(err, user){
+      if (err) { return console.log(err); }
+      console.log(image.title);
+      // console.log(req.session.currentUser);
+    res.redirect('/streetart');
+  });
+  console.log(req.body.imageUrl);
+});
+
+
 router.get('/:id', function showAction(req, res){
   Image.findById(req.params.id)
     .exec(function(err, image) {
@@ -81,26 +103,6 @@ router.delete('/:id', function(req, res){
 
 
 
-router.get('/new', function(req, res) {
-	res.render('photos/new');
-});
-
-
-
-router.post('/', function createUser(req, res) {
-	var image = new Image({
-		imageUrl: req.body.imageUrl,
-		title: req.body.title,
-		description: req.body.description
-	});
-		image.save(function(err, user){
-			if (err) { return console.log(err); }
-			console.log(image.title);
-			// console.log(req.session.currentUser);
-		res.redirect('/streetart');
-  });
- 	console.log(req.body.imageUrl);
-});
 
 
 

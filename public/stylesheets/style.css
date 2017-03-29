@@ -43,6 +43,7 @@ a {
 
 .header h1 {
 	margin-top: 0px;
+	
 }
 
 .navbar {
@@ -108,7 +109,50 @@ button {
 
 
 
+.landingPage {
+	display: flex;
+	margin: 0 auto;
+	height: 500px;
+	padding: 25px;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	/*background-color: white;*/
+	background-color:  rgba(255, 255, 255, .1);
+	padding: 0px 150px 0px 150px;
+}
 
+.about {
+	margin: 0 auto;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	height: 300px;
+	background-color: lightgrey;
+	padding: 25px;
+	font-size: 2em;
+	border-radius: 10px;
+}
+
+.signInLink {
+	display: flex;
+	justify-content: center;
+	/*padding: 0px 50px 0px 50px;*/
+}
+
+.signInLink a {
+	padding: 15px;
+	text-decoration: none;
+	transition: 2s;
+}
+
+.signInLink a:hover {
+	color: black;
+	font-size: 1.05em;
+	transition: .25s;
+}
 
 
 
