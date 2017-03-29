@@ -16,27 +16,26 @@
 
 
 <div class="uploadform" id="updateForm">
-  <form class="" action="/streetart/{{image.id}}?_method=PATCH" method="POST">
-		<div class="form-group">
-			<label for="image-title">TITLE: </label>
-			<input id="image-title" class="form-control" type="text" name="title" value="" required>
-		</div>
+	  <form action="/streetart/{{image.id}}?_method=PATCH" method="POST">
+			<div class="form-group">
+				<label for="image-title">TITLE: </label>
+				<input id="image-title" class="form-control" type="text" name="title" value="" required>
+			</div>
 
-		<div class="form-group">
-			<label for="image-description">DESCRIPTION: </label>
-			<input id="image-description" class="form-control" type="text" name="description" value="" required>
-		</div>
+			<div class="form-group">
+				<label for="image-description">DESCRIPTION: </label>
+				<input id="image-description" class="form-control" type="text" name="description" value="" required>
+			</div>
+		</form>
 
-<ul>
-	<form class="" action="/streetart/{{image.id}}?_method=delete" method="post">
-		<input type="submit" name="" value="DELETE">
-	</form>
-	<button class="button" type="submit" name="button">
-		<p>EDIT</p>
-	</button>
-</ul>
-
-	</form>
+	<div class="editButtons">
+		<button class="button" type="submit" name="button">
+			<p>EDIT</p>
+		</button>
+		<form action="/streetart/{{image.id}}?_method=delete" method="post">
+			<input type="submit" name="" value="DELETE">
+		</form>	
+	</div>
 </div>
 
 

@@ -76,7 +76,7 @@ li {
 }
 
 .editList img {
-	margin: 100px 0px 100px 0px;
+	margin: 100px 0px 0px 0px;
 }
 
 .image-container {
@@ -112,6 +112,7 @@ button {
 	height: 500px;
 	width: 500px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-content: center;
 }
@@ -169,6 +170,13 @@ button {
 
 .showImage {
 	margin-bottom: 50px;
+}
+
+.editButtons {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 10px;
 }
 
 
