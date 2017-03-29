@@ -10,25 +10,10 @@
 </div>
 
 
-
-<!-- <form class="" action="/users/{{id}}?_method=PATCH" method="post">
-  <input type="text" name="first_name" value="{{first_name}}">
-  <input type="text" name="last_name" value="{{last_name}}">
-  <input type="text" name="email" value="{{email}}">
-  <input type="submit" name="" value="Submit">
-</form> -->
-
-
-<div class="list">
+<div class="editList">
 	<img src="{{image.imageUrl}}" alt="" width="750px">
 </div>
 
-
-<ul>
-	<form class="" action="/streetart/{{image.id}}?_method=delete" method="post">
-		<input type="submit" name="" value="delete">
-	</form>
-</ul>
 
 <div class="uploadform" id="updateForm">
   <form class="" action="/streetart/{{image.id}}?_method=PATCH" method="POST">
@@ -42,10 +27,16 @@
 			<input id="image-description" class="form-control" type="text" name="description" value="" required>
 		</div>
 
-		<button class="button" type="submit" name="button">
+<ul>
+	<form class="" action="/streetart/{{image.id}}?_method=delete" method="post">
+		<input type="submit" name="" value="DELETE">
+	</form>
+	<button class="button" type="submit" name="button">
 		<p>EDIT</p>
-		</button>
+	</button>
+</ul>
 
 	</form>
 </div>
+
 

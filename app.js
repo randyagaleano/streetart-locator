@@ -1,3 +1,6 @@
+require('dotenv').config()
+
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -8,13 +11,15 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
 
+
 var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
 
 // var db = mongoose.connection;
-mongoose.connect('mongodb://localhost/streetart');
+mongoose.connect(process.env.MONGODB_URI);
+
 
 // db.once('open', function() {
 //  console.log('database connected');

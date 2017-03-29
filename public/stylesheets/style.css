@@ -3,11 +3,12 @@ body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 	padding: 0;
 	margin: 0;
-	/*background-color: black;*/
 	background: url('../images/background.jpg') no-repeat center center fixed;
+/*	background: url('../images/hal9000.jpg') no-repeat center center fixed;*/
 	background-position: absolute;
 	text-align: center;
 	font-family: helvetica;
+	align-content: center;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	height: 150px;
+	height: 200px;
 	background-color:  rgba(0, 0, 0, 0.5);
 	margin: 0px;
 	color: black;
@@ -78,6 +79,10 @@ li {
 	
 }
 
+.editList img {
+	margin: 100px 0px 100px 0px;
+}
+
 .image-container {
 	display: inline-block;
 }
@@ -95,6 +100,10 @@ li {
 
 button {
 	margin-bottom: 20px;
+}
+
+.button p {
+	margin-bottom: 0;
 }
 
 .form-group {
