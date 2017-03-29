@@ -43,7 +43,7 @@ a {
 
 .header h1 {
 	margin-top: 0px;
-	
+
 }
 
 .navbar {
@@ -129,11 +129,15 @@ button {
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
-	height: 300px;
+	height: 200px;
 	background-color: lightgrey;
-	padding: 25px;
-	font-size: 2em;
+	font-size: 1.25em;
 	border-radius: 10px;
+}
+
+.siteInfo {
+	padding: 0px 150px 0px 150px;
+	text-align: left;
 }
 
 .signInLink {
