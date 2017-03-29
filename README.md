@@ -23,7 +23,8 @@ http://jeopardy-rg.bitballoon.com/
 
 Wireframe
 -----------------
-![alt tag](http://imgur.com/a/6nMmA)http://imgur.com/a/6nMmA)
+![alt tag](http://imgur.com/a/6nMmA)
+
 
 
 TRELLO
