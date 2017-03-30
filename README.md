@@ -10,6 +10,7 @@ The idea sprung after seeing a potential banksy piece on my way to GA.
 I want the users to be able to attach the location of the art piece for others to visit the site themselves.
 Users will also be able to favorite, comment, and search images of their liking.
 
+PORTFOLIO: http://randygaleano.bitballoon.com/
 
 
 DEPLOYED APP THROUGH HEROKU 
